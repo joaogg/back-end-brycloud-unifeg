@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocumentacaoAcademicaRegistro
+	xmlns="http://portal.mec.gov.br/diplomadigital/arquivos-em-xsd"
+	xmlns:ns2="http://www.w3.org/2000/09/xmldsig#">
+	<RegistroReq id="ReqDip79951545607634792240966868540580316939999999" versao="1.04.1">
+		<DadosDiploma id="Dip79951545607634792240966868540580316939999999">
+			<Diplomado>
+				<ID>99999999</ID>
+				<Nome>Teste Beltrano da Silva</Nome>
+				<Sexo>M</Sexo>
+				<Nacionalidade>BRASIL</Nacionalidade>
+				<Naturalidade>
+					<CodigoMunicipio>9999999</CodigoMunicipio>
+					<NomeMunicipio>Rio Branco</NomeMunicipio>
+					<UF>RJ</UF>
+				</Naturalidade>
+				<CPF>99999999999</CPF>
+				<RG>
+					<Numero>9999999</Numero>
+					<OrgaoExpedidor>Serviço de Registro</OrgaoExpedidor>
+					<UF>AC</UF>
+				</RG>
+				<DataNascimento>1999-01-01</DataNascimento>
+			</Diplomado>
+			<DadosCurso>
+				<NomeCurso>Bacharel em Ciências Genéricas</NomeCurso>
+				<SemCodigoCursoEMEC>
+					<NumeroProcesso>99999</NumeroProcesso>
+					<TipoProcesso>Processo</TipoProcesso>
+					<DataCadastro>2000-01-01</DataCadastro>
+					<DataProtocolo>2000-01-01</DataProtocolo>
+				</SemCodigoCursoEMEC>
+				<Habilitacao>
+					<NomeHabilitacao>Habilitacao</NomeHabilitacao>
+					<DataHabilitacao>2000-01-01</DataHabilitacao>
+				</Habilitacao>
+				<Modalidade>Presencial</Modalidade>
+				<TituloConferido>
+					<Titulo>Bacharel</Titulo>
+				</TituloConferido>
+				<GrauConferido>Bacharelado</GrauConferido>
+				<EnderecoCurso>
+					<Logradouro>AV. DA BRY</Logradouro>
+					<Bairro>CENTRO</Bairro>
+					<CodigoMunicipio>9999999</CodigoMunicipio>
+					<NomeMunicipio>Rio Branco</NomeMunicipio>
+					<UF>AC</UF>
+					<CEP>99999999</CEP>
+				</EnderecoCurso>
+				<Autorizacao>
+					<Tipo>Parecer</Tipo>
+					<Numero>2129</Numero>
+					<Data>1978-09-04</Data>
+				</Autorizacao>
+				<Reconhecimento>
+					<Tipo>Decreto</Tipo>
+					<Numero>83161</Numero>
+					<Data>1979-02-12</Data>
+					<VeiculoPublicacao>DOU</VeiculoPublicacao>
+					<DataPublicacao>1979-02-13</DataPublicacao>
+					<SecaoPublicacao>1</SecaoPublicacao>
+					<PaginaPublicacao>2187</PaginaPublicacao>
+				</Reconhecimento>
+			</DadosCurso>
+			<IesEmissora>
+				<Nome>BRY TECNOLOGIA</Nome>
+				<CodigoMEC>99999</CodigoMEC>
+				<CNPJ>99999999999999</CNPJ>
+				<Endereco>
+					<Logradouro>AV DA BRY</Logradouro>
+					<Bairro>CENTRO</Bairro>
+					<CodigoMunicipio>9999999</CodigoMunicipio>
+					<NomeMunicipio>RIO BRANCO</NomeMunicipio>
+					<UF>AC</UF>
+					<CEP>99999999</CEP>
+				</Endereco>
+				<Credenciamento>
+					<Tipo>Parecer</Tipo>
+					<Numero>2129</Numero>
+					<Data>1978-09-04</Data>
+				</Credenciamento>
+				<Mantenedora>
+					<RazaoSocial>BRY TECNOLOGIA SA</RazaoSocial>
+					<CNPJ>99999999999999</CNPJ>
+					<Endereco>
+						<Logradouro>AV DA BRY</Logradouro>
+						<Bairro>CENTRO</Bairro>
+						<CodigoMunicipio>9999999</CodigoMunicipio>
+						<NomeMunicipio>RIO BRANCO</NomeMunicipio>
+						<UF>AC</UF>
+						<CEP>99999999</CEP>
+					</Endereco>
+				</Mantenedora>
+			</IesEmissora>
+			<Assinantes>
+				<Assinante>
+					<CPF>99999999999</CPF>
+					<Cargo>Reitor</Cargo>
+				</Assinante>
+			</Assinantes>
+		</DadosDiploma>
+		<DadosPrivadosDiplomado>
+			<Filiacao>
+				<Genitor>
+					<Nome>TESTALINA DA CONCEICAO</Nome>
+					<Sexo>F</Sexo>
+				</Genitor>
+				<Genitor>
+					<Nome>FULANO DA SILVA</Nome>
+					<Sexo>M</Sexo>
+				</Genitor>
+			</Filiacao>
+			<HistoricoEscolar>
+				<ElementosHistorico>
+					<Disciplina>
+						<NomeDisciplina>CÁLCULO 1</NomeDisciplina>
+						<PeriodoLetivo>2020</PeriodoLetivo>
+						<CargaHoraria>
+							<HoraAula>122</HoraAula>
+						</CargaHoraria>
+						<Nota>10.0</Nota>
+						<Aprovado>
+							<FormaIntegralizacao>Cursado</FormaIntegralizacao>
+						</Aprovado>
+						<Docentes>
+							<Docente>
+								<Nome>JARBAS CICRANO DA PAZ</Nome>
+								<Titulacao>Doutorado</Titulacao>
+							</Docente>
+						</Docentes>
+					</Disciplina>		
+				</ElementosHistorico>
+				<DataEmissaoHistorico>2020-01-01</DataEmissaoHistorico>
+				<SituacaoAtualDiscente>
+					<PeriodoLetivo>01/01/2020 a 01/12/2021</PeriodoLetivo>
+					<Formado>
+						<DataConclusaoCurso>2022-01-01</DataConclusaoCurso>
+						<DataColacaoGrau>2022-01-01</DataColacaoGrau>
+						<DataExpedicaoDiploma>2022-01-01</DataExpedicaoDiploma>
+					</Formado>
+				</SituacaoAtualDiscente>
+				<ENADE/>
+				<CargaHorariaCursoIntegralizada>
+					<HoraAula>9999</HoraAula>
+				</CargaHorariaCursoIntegralizada>
+				<CargaHorariaCurso>
+					<HoraAula>9999</HoraAula>
+				</CargaHorariaCurso>
+				<IngressoCurso>
+					<Data>2020-01-01</Data>
+					<FormaAcesso>Vesitbular</FormaAcesso>
+				</IngressoCurso>
+			</HistoricoEscolar>
+		</DadosPrivadosDiplomado>
+		<TermoResponsabilidadeEmissora>
+			<Nome>KELSON DA SILVEIRA TESTE</Nome>
+			<CPF>99999999999</CPF>
+			<Cargo>REITOR</Cargo>
+			<AtoDesignacao></AtoDesignacao>
+		</TermoResponsabilidadeEmissora>
+		<DocumentacaoComprobatoria>
+		</DocumentacaoComprobatoria>
+	</RegistroReq>
+</DocumentacaoAcademicaRegistro>

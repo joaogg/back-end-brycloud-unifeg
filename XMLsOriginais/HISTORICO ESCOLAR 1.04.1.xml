@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocumentoHistoricoEscolarFinal
+	xmlns="http://portal.mec.gov.br/diplomadigital/arquivos-em-xsd"
+	xmlns:ns2="http://www.w3.org/2000/09/xmldsig#">
+	<infHistoricoEscolar ambiente="Homologação" versao="1.04.1">
+		<Aluno>
+			<ID>99999999</ID>
+			<Nome>Teste Beltrano da Silva</Nome>
+			<Sexo>M</Sexo>
+			<Nacionalidade>BRASIL</Nacionalidade>
+			<Naturalidade>
+				<CodigoMunicipio>9999999</CodigoMunicipio>
+				<NomeMunicipio>Rio de Janeiro</NomeMunicipio>
+				<UF>RJ</UF>
+			</Naturalidade>
+			<CPF>99999999999</CPF>
+			<RG>
+				<Numero>8845794</Numero>
+				<OrgaoExpedidor>Serviço de Identificação da BRY</OrgaoExpedidor>
+				<UF>RJ</UF>
+			</RG>
+			<DataNascimento>1997-01-01</DataNascimento>
+		</Aluno>
+		<DadosCurso>
+			<NomeCurso>Bacharel em Ciências Genéricas</NomeCurso>
+			<SemCodigoCursoEMEC>
+				<NumeroProcesso>99999</NumeroProcesso>
+				<TipoProcesso>Processo SEI</TipoProcesso>
+				<DataCadastro>2020-01-01</DataCadastro>
+				<DataProtocolo>2020-01-01</DataProtocolo>
+			</SemCodigoCursoEMEC>
+			<Habilitacao>
+				<NomeHabilitacao>Bacharel</NomeHabilitacao>
+				<DataHabilitacao>2020-01-01</DataHabilitacao>
+			</Habilitacao>
+		</DadosCurso>
+		<IesEmissora>
+			<Nome>UNIVERSIDADE DA BRY</Nome>
+			<CodigoMEC>99999</CodigoMEC>
+			<CNPJ>00394502999999</CNPJ>
+			<Mantenedora>
+				<RazaoSocial>UNIVERSIDADE DA BRY</RazaoSocial>
+				<CNPJ>00394502999999</CNPJ>
+			</Mantenedora>
+		</IesEmissora>
+		<HistoricoEscolar>
+			<ElementosHistorico>
+				<Disciplina>
+					<NomeDisciplina>CÁLCULO 1</NomeDisciplina>
+					<PeriodoLetivo>2020</PeriodoLetivo>
+					<CargaHoraria>
+						<HoraAula>122</HoraAula>
+					</CargaHoraria>
+					<Nota>9.4</Nota>
+					<Aprovado>
+						<FormaIntegralizacao>Cursado</FormaIntegralizacao>
+					</Aprovado>
+					<Docentes>
+						<Docente>
+							<Nome>FULANO DE TALL</Nome>
+							<Titulacao>Doutorado</Titulacao>
+						</Docente>
+					</Docentes>
+				</Disciplina>
+				
+			</ElementosHistorico>
+			<DataEmissaoHistorico>2022-01-01</DataEmissaoHistorico>
+			<SituacaoAtualDiscente>
+				<PeriodoLetivo>2020-01-01 a 2022-01-01</PeriodoLetivo>
+				<Formado>
+					<DataConclusaoCurso>2022-01-01</DataConclusaoCurso>
+					<DataColacaoGrau>2022-01-01</DataColacaoGrau>
+					<DataExpedicaoDiploma>2022-01-01</DataExpedicaoDiploma>
+				</Formado>
+			</SituacaoAtualDiscente>
+			<ENADE/>
+			<CargaHorariaCursoIntegralizada>
+				<HoraAula>4679</HoraAula>
+			</CargaHorariaCursoIntegralizada>
+			<CargaHorariaCurso>
+				<HoraAula>4679</HoraAula>
+			</CargaHorariaCurso>
+			<IngressoCurso>
+				<Data>2020-02-01</Data>
+				<FormaAcesso>Outros</FormaAcesso>
+			</IngressoCurso>
+		</HistoricoEscolar>
+		<SegurancaHistorico>
+			<CodigoValidacao>CODIGO</CodigoValidacao>
+		</SegurancaHistorico>
+	</infHistoricoEscolar>
+</DocumentoHistoricoEscolarFinal>
