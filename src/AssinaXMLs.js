@@ -7,11 +7,16 @@ const FormData = require('form-data');
 
 ///////////////////// VARIAVEIS QUE PRECISAM SER MODIFICADAS  /////////////////////////
 
+// https://gitlab.com/brytecnologia-team/integracao/api-diploma-digital/javascript/geracao-diploma-kms/back-end
+
 // TOKEN DE ACESSO AO BRY FRAMEWORK, GERADO NO BRY-CLOUD.
-const authorization = '<TOKEN_DE_ACESSO>'
+const authorization = 'eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJIcVFrTkVFVzJJdzNuU0JPcklDUU9KQmVWQUNhVjVuYzBuZG9TSWhfY2NBIn0.eyJleHAiOjE2NzU4MTMwNzMsImlhdCI6MTY3NTgxMTI3MywianRpIjoiYjRmZjcwNTAtZWY4Yi00ZTE2LWIzMDEtMTEzNGMwNzE1YjE2IiwiaXNzIjoiaHR0cHM6Ly9jbG91ZC1ob20uYnJ5LmNvbS5ici9hdXRoL3JlYWxtcy9jbG91ZCIsImF1ZCI6WyJrbXMiLCJhY2NvdW50Il0sInN1YiI6ImY6ZWExZDg2NGYtNzg3MS00M2Q2LWJjYmYtMTE4N2M3ZmI4MTg2OnVuaWZlZyIsInR5cCI6IkJlYXJlciIsImF6cCI6InRlcmNlaXJvcyIsInNlc3Npb25fc3RhdGUiOiJjMTZjZDAxYi1kMTUwLTQzMTctODE3MC0wZTgxZjhjNjZlNTUiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidXN1YXJpbyIsInVtYV9hdXRob3JpemF0aW9uIiwidXNlciJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImNvZGUiOiIyMDc3MzIxNDAwMDM3MCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY2xvdWRfYXBwX2tleSI6ImFwcC51bmlmZWcuMTY3NDUxNjYwMTUyMSIsIm5hbWUiOiJDRU5UUk8gVU5JVkVSU0lUw4FSSU8gREEgRlVOREHDh8ODTyBFRFVDQUNJT05BTCBHVUFYVVDDiSIsImNsb3VkX3Rva2VuIjoibVljVkhQRFdWZno1bERvanlOZ0pYUDR3UmtmbUNiMFRJd0QxTWpyVFNXVGluNHZ6VXlmS1VBa2t1SnN4N0tsTiIsInByZWZlcnJlZF91c2VybmFtZSI6InVuaWZlZyIsImdpdmVuX25hbWUiOiJDRU5UUk8iLCJmYW1pbHlfbmFtZSI6IlVOSVZFUlNJVMOBUklPIERBIEZVTkRBw4fDg08gRURVQ0FDSU9OQUwgR1VBWFVQw4kifQ.PgU_aV76wRgtOrzCPbYavBtGgxiCLPaZH1I8Xoi0khQn-8Oy8i6WbDUcKwjxBFnEB4CufPgoVM2sRhkWnxm6G4jUETZS9hToBGSVx_R_wq8zr1QOvrI1eCuh-PqpGjcYegNWf3NtpC9CjkhN-1rK0oE3HynQ_kgoV8fL4ix74rDkgsEzdL022i1EvOHFgCYUBPwILvosVdUw8mISg10-qeVeKExhw3UUgXgs4Bm3oPUx2A1m46tjL79PaME4BDUmErtQxIHoVfuwPA4jtl2vs8l9QSLO5_mseYqIMXQBMER-3RBYGF_xz3FU_iEf2BK7TXQP_ZCCjeBPUxBRhaCvUw';
+
+// CODIFICAÇÃO DA SENHA PIN DO CERTIFICADO EM BASE64
+const base64String = new Buffer.from('123456789').toString('base64');
 
 // CHAVE DE AUTORIZAÇÃO (PIN) DO USUÁRIO SIGNATÁRIO CODIFICADA NO FORMATO BASE64.
-const kms_credencial = '<KMS_CREEDNCIEAL>';
+const kms_credencial = base64String;
 
 // TIPO DA CREDENCIAL FORNECIDA. ATUALMENTE HÁ SUPORTE PARA O FORMATO “PIN”.
 const kms_credencial_tipo = 'PIN';
@@ -35,6 +40,7 @@ class AssinaXMLs {
     async assinaXMLDiplomado(req, res) {
 
         const formData = new FormData();
+
         
         //Tipo de assinante enviado pelo front-end (será usado no switch-case para diferentes tipos de assinantes do diploma) 
         const tipoAssinatura = req.body.tipoAssinatura;
@@ -122,6 +128,9 @@ class AssinaXMLs {
 
         try {
             // REALIZA REQUISIÇÃO PARA O BRY HUB
+            console.log('formData => ', formData);
+            console.log('header => ', header);
+            console.log('url => ', url);
             const response = await axios.post(url, formData, header);
 
             fs.unlinkSync(path.resolve(__dirname, '..', '.temp/', documento.filename))
