@@ -169,8 +169,8 @@ class AssinaXMLs {
             }
 
         } catch (err) {
-            // console.log(err)
-            return res.status(500).send({ message: err.response.data.message });
+            console.log(err.response.data.message)
+            return res.json({ message: err.response.data.message });
         }
     }
 
@@ -299,7 +299,7 @@ class AssinaXMLs {
                     { encoding: "base64" },
                     (err) => {
                         if (err) {
-                            return res.status(400).json({ error: "Erro ao criar arquivo" })
+                            return res.json({ error: "Erro ao criar arquivo" })
                         }
                         console.log("Arquivo assinado e salvo localmente");
                     });
@@ -308,7 +308,7 @@ class AssinaXMLs {
 
         } catch (err) {
             // console.log(err)
-            return res.status(500).send({ message: err.response.data.message });
+            return res.json({ message: err.response.data.message });
         }
     }
 
